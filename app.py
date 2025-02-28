@@ -69,11 +69,14 @@ If you need to think through your process, wrap that text in <think> tags.
 # Fetch the News API key from environment variables
 NEWS_API_KEY = os.getenv('NEWS_API_KEY')
 
+# Fetch the Ollama Model from environment variables
+OLLAMA_MODEL= os.getenv('OLLAMA_MODEL')
+
 def initialize_llm():
     """Initialize the Ollama language model."""
     try:
         return Ollama(
-            model="INSERT_MODEL",  # or any other model you have in Ollama
+            model=OLLAMA_MODEL,  
             base_url="http://localhost:11434",  # default Ollama API URL
             temperature=0.7
         )
