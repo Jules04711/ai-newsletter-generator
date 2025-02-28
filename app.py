@@ -73,7 +73,7 @@ def initialize_llm():
     """Initialize the Ollama language model."""
     try:
         return Ollama(
-            model="deepseek-r1",  # or any other model you have in Ollama
+            model="INSERT_MODEL",  # or any other model you have in Ollama
             base_url="http://localhost:11434",  # default Ollama API URL
             temperature=0.7
         )
