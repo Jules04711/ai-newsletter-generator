@@ -33,6 +33,10 @@ AI Newsletter Generator is a Streamlit app that creates professional newsletters
   ```
   NEWS_API_KEY=your_api_key_here
   ```
+- Add your OLLAMA Model from https://ollama.com/:
+  ```
+  OLLAMA_MODEL= ENTER_OLLAMA_MODEL
+  ```
 
 ## Features
 
